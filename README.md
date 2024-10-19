@@ -1,2 +1,1 @@
-# thegreathomepage
-Bypassing Censorship
+# THE GREAT HOMEPAGE
