@@ -1,44 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  		<link href="style.css" rel="stylesheet"></link>
-</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Great Homepage - Submit Links</title>
+    <style>
+        /* Nord Color Palette */
+        :root {
+            --nord0: #2E3440;
+            --nord1: #3B4252;
+            --nord2: #434C5E;
+            --nord3: #4C566A;
+            --nord4: #D8DEE9;
+            --nord5: #E5E9F0;
+            --nord6: #ECEFF4;
+            --nord7: #8FBCBB;
+            --nord8: #88C0D0;
+            --nord9: #81A1C1;
+            --nord10: #5E81AC;
+            --nord11: #BF616A;
+            --nord12: #D08770;
+            --nord13: #EBCB8B;
+            --nord14: #A3BE8C;
+            --nord15: #B48EAD;
+        }
 
-<h1 class="joe"><strong>THE GREAT HOMEPAGE</strong></h1>
-<h1><code>by weblabsaus</code></h1>
-<h1><strong><code>Guide</code></strong></h1>
-<p><strong><code>This is a guide to know how to use the page</code></strong></p>
-<h2><strong><code>Statuses/Keys</code></strong></h2>
-<p><strong><code>🫤 - Unblocked Status Unknown</code></strong><br />
-<strong><code>🧅 - Tor Link Available (Click on emoji)*</code></strong><br />
-<strong><code>🌐 - Made by weblabsaus</code></strong></p>
-<p><strong><code>*If prefix it means only available in onion</code></strong></p>
-<h2></h2>
-<h2><strong><code>Main Downloads</code></strong></h2>
-<p><strong><code>Tor Download:</code></strong> [<code>https://www.torproject.org/download/</code><br />
-<strong><code>IMPORTANT: TOR CURRENTLY HAS A 0 DAY EXPLOIT REMOVING ANONYMITY FROM THE PLATFORM. PLEASE TAKE CAUTION. THIS ALSO AFFECTS FIREFOX.</code></strong></p>
-<h1><strong><code>🏕️ Main</code></strong></h1>
-<p><a href="https://github.com/weblabsaus?tab=stars"><code>⭐ Stars</code></a> <code>🌐</code><br />
-<a href="https://wikileaks.org/"><code>🪬 Assange</code></a></p>
-<h1><strong><code>💻 Pentesting</code></strong></h1>
-<p><a href="https://github.com/safesploit/PythonRAT"><code>pythonrat</code></a><br />
-<a href="https://github.com/hakluke/hakrawler"><code>asset discovery</code></a><br />
-<a href="https://github.com/blaCCkHatHacEEkr/PENTESTING-BIBLE"><code>pentesting bible</code></a><br />
-<a href="https://github.com/flashnuke"><code>Flashnuk</code></a><code>e</code></p>
-<h1><strong><code>🚫 Unblocked</code></strong></h1>
-<p><a href="https://redlib.ducks.party"><code>Reddit</code></a> <code>🧅</code><br />
-<a href="https://xcancel.com/"><code>Twitter</code></a><br />
-<a href="https://www.multitwitch.tv/"><code>Twitch</code></a> <code>🫤</code><br />
-<a href="https://inv.nadeko.net/feed/popular"><code>Youtube</code></a> <code>🧅</code><br />
-<a href="https://elk.zone/m.webtoo.ls/public/local"><code>Mastodon</code></a> <code>🫤</code><br />
-<a href="https://weblabsaus.github.io/Mega-Launcher/"><code>Mega Launcher</code></a> <code>🌐</code><br />
-<a href="https://en.wikipedia.org/wiki/List_of_Tor_onion_services"><code>Onion Bookmark (Light Web)</code></a><code>[^1]</code><br />
-<a href="https://ahmia.fi/"><code>Tor's Google</code></a> <code>🧅</code><br />
-<a href="https://www.facebookwkhpilnemxj7asaniu7vnjjbiltxjqhye3mhbshg7kx5tfyd.onion/"><code>🧅 Facebook</code></a></p>
-<h1><strong><code>🕵️‍♂️ Foreign Intelligence</code></strong></h1>
-<p><strong><code>NOTE: Onion Only 🧅</code></strong><br />
-<a href="http://ciadotgov4sjwlzihbbgxnqg3xiyrg7so2r2o3lt5wz5ypk4sxyjstad.onion"><code>CIA</code></a><br />
-<a href="http://svrgovru24yd42e6mmrnohzs37hb35yqeulvmvkc76e3drb75gs4qrid.onion"><code>Please don’t use this</code></a></p>
-<h1><strong><code>🦅 Free Journalism</code></strong></h1>
-<p><strong><code>NOTE: Onion Only 🧅</code></strong><br />
-<a href="http://abc.au.securedrop.tor.onion"><code>ABC Securedrop (AUS)</code></a><br />
-<a href="http://suw74isz7wqzpmgu.onion/"><code>Wikileaks</code></a></p>
-<p>[^1]: <strong><code>I can’t put the dark web one here</code></strong></p>
+        body {
+            background-color: var(--nord0);
+            color: var(--nord4);
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1, h2, h3 {
+            color: var(--nord7);
+        }
+
+        a {
+            color: var(--nord8);
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: var(--nord13);
+        }
+
+        .content {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: var(--nord1);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .downloads, .sections {
+            margin-top: 20px;
+        }
+
+        .sections ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sections ul li {
+            margin: 10px 0;
+        }
+
+        .icon {
+            font-size: 20px;
+            margin-right: 8px;
+        }
+
+        .warning {
+            color: var(--nord11);
+        }
+
+        /* Form Styles */
+        form {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: var(--nord2);
+            border-radius: 10px;
+        }
+
+        input[type="text"], input[type="url"], textarea, select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            background-color: var(--nord1);
+            color: var(--nord5);
+            border: none;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: var(--nord8);
+            color: var(--nord0);
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: var(--nord9);
+        }
+
+        .export-btn {
+            margin-top: 10px;
+            background-color: var(--nord10);
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1>The Great Homepage</h1>
+        <p>by weblabsaus</p>
+
+        <div class="guide">
+            <h2>Guide</h2>
+            <p>This is a guide to know how to use the page</p>
+        </div>
+
+        <div class="statuses">
+            <h2>Statuses/Keys</h2>
+            <ul>
+                <li>🫤 - Unblocked Status Unknown</li>
+                <li>🧅 - Tor Link Available (Click on emoji)*</li>
+                <li>🌐 - Made by weblabsaus</li>
+            </ul>
+            <p><small>*If prefix it means only available in onion</small></p>
+        </div>
+
+        <div class="downloads">
+            <h2>Main Downloads</h2>
+            <p>
+                Tor Download: 
+                <a href="https://www.torproject.org/download/" target="_blank">https://www.torproject.org/download/</a>
+            </p>
+            <p class="warning">
+                IMPORTANT: TOR CURRENTLY HAS A 0 DAY EXPLOIT REMOVING ANONYMITY FROM THE PLATFORM. PLEASE TAKE CAUTION. THIS ALSO AFFECTS FIREFOX.
+            </p>
+        </div>
+
+        <div class="sections">
+            <h2>🏕️ Main</h2>
+            <ul>
+                <li>⭐ Stars 🌐</li>
+                <li>🪬 Assange</li>
+            </ul>
+
+            <!-- Add more sections if needed -->
+        </div>
+
+        <h2>Submit a New Link</h2>
+        <form id="linkForm">
+            <label for="linkName">Link Name:</label>
+            <input type="text" id="linkName" name="linkName" required>
+
+            <label for="linkUrl">Link URL:</label>
+            <input type="url" id="linkUrl" name="linkUrl" required>
+
+            <label for="category">Category:</label>
+            <select id="category" name="category" required>
+                <option value="Main">Main</option>
+                <option value="Pentesting">Pentesting</option>
+                <option value="Unblocked">Unblocked</option>
+                <option value="Foreign Intelligence">Foreign Intelligence</option>
+                <option value="Free Journalism">Free Journalism</option>
+                <option value="new">New Category (Specify in Special Instructions)</option>
+            </select>
+
+            <label for="onionLink">Onion Link (Optional):</label>
+            <input type="url" id="onionLink" name="onionLink">
+
+            <label for="instructions">Special Instructions (Optional):</label>
+            <textarea id="instructions" name="instructions" rows="4"></textarea>
+
+            <button type="button" onclick="exportTemplate()">Export as Text Template</button>
+            <button type="button" class="export-btn" onclick="openGithubIssues()">Open GitHub Issues Maker</button>
+        </form>
+
+        <h2>ASCII Art</h2>
+        <pre>
+        ███████╗██╗███╗   ██╗ ██████╗ ███████╗
+        ██╔════╝██║████╗  ██║██╔════╝ ██╔════╝
+        ███████╗██║██╔██╗ ██║██║  ███╗█████╗  
+        ╚════██║██║██║╚██╗██║██║   ██║██╔══╝  
+        ███████║██║██║ ╚████║╚██████╔╝███████╗
+        ╚══════╝╚═╝╚═╝  ╚═══╝ ╚═════╝ ╚══════╝
+        </pre>
+
+    </div>
+
+    <script>
+        function exportTemplate() {
+            const linkName = document.getElementById('linkName').value;
+            const linkUrl = document.getElementById('linkUrl').value;
+            const category = document.getElementById('category').value;
+            const onionLink = document.getElementById('onionLink').value || 'N/A';
+            const instructions = document.getElementById('instructions').value || 'N/A';
+
+            const template = `Link Name: ${linkName}\nLink URL: ${linkUrl}\nCategory: ${category}\nOnion Link: ${onionLink}\nSpecial Instructions: ${instructions}`;
+            navigator.clipboard.writeText(template).then(() => {
+                alert('Template copied to clipboard!');
+            });
+        }
+
+        function openGithubIssues() {
+            const repoUrl = 'https://github.com/weblabsaus/thegreathomepage/issues';
+            window.open(repoUrl, '_blank');
+        }
+    </script>
+</body>
+</html>
